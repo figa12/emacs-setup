@@ -170,3 +170,6 @@ It expects a properly indented CSS"
   (eval-after-load "mumamo"
     '(setq mumamo-per-buffer-local-vars
            (delq 'buffer-file-name mumamo-per-buffer-local-vars))))
+
+;; Force linum on in mumamo
+(add-hook 'after-change-major-mode-hook 'linum-on)

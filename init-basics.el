@@ -18,6 +18,8 @@
 ;(setq linum-format "%d ")
 ;If you want a solid line separator, try something like this:
 ;(setq linum-format “%4d \u2502 “)
+; linum jumps back and forth in mumamo, here's a horrible fix
+(setq linum-format "%4d")
 
 ;; disable auto-fill behaviour
 (setq auto-fill-mode -1)
