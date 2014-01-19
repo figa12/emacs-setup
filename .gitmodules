@@ -1,6 +1,6 @@
 [submodule "lib/znc"]
 	path = lib/znc
-	url = https://github.com/sshirokov/ZNC.el
+	url = https://github.com/tausen/ZNC.el.git
 	ignore = dirty
 [submodule "lib/emacs-for-python"]
 	path = lib/emacs-for-python
