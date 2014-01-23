@@ -171,5 +171,9 @@ It expects a properly indented CSS"
     '(setq mumamo-per-buffer-local-vars
            (delq 'buffer-file-name mumamo-per-buffer-local-vars))))
 
+;; Use k&r style comments in C and PHP
+(add-hook 'c-mode-hook (lambda () (setq comment-start "/*"
+                                        comment-end   "*/")))
+
 ;; Force linum on in mumamo
 (add-hook 'after-change-major-mode-hook 'linum-on)
